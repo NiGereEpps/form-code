@@ -251,6 +251,7 @@
 }
 
 #option {
+    visibility: hidden;
     padding: 10px;
     display: block;
     background-color: green;

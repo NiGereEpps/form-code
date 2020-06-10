@@ -165,5 +165,6 @@ function draw() {
     } else {
         noLoop()
         options()
+        document.querySelector('#option').style.visibility = 'visible'
     }
 }
