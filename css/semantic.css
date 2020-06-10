@@ -24,7 +24,7 @@
   color: #555;
   background-color: #fff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.6em;
+  font-size: 1.6vw;
   font-weight: 700;
   text-align:center;
 }
@@ -32,7 +32,7 @@
   font-family: 'Roboto', sans-serif;
   color: #555;
   text-align:center;
-  font-size: 1.3em;
+  font-size: 1.2vw;
 }
 .alertify .ajs-body .ajs-content .ajs-input {
   width: 100%;
