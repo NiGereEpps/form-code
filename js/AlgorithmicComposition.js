@@ -50,7 +50,7 @@ function modef(callback1, callback2, callback3) {
                 mode = 1
                 callback1(callback2, callback3);
             }
-        ).set('closable', false).set({ 'closableByDimmer': false }).set('labels', {ok:'Submit', cancel:'Default'});
+        ).set('closable', false).set({ 'closableByDimmer': false }).set('labels', { ok: 'Submit', cancel: 'Default' });
 
     }, 10);
 }
@@ -67,11 +67,11 @@ function mousemodef(callback1, callback2) {
                     mousemode = 0
                 callback1(callback2);
             },
-            function() { 
+            function() {
                 mousemode = 0
                 callback1(callback2);
             }
-        ).set('closable', false).set({ 'closableByDimmer': false }).set('labels', {ok:'Submit', cancel:'Default'});
+        ).set('closable', false).set({ 'closableByDimmer': false }).set('labels', { ok: 'Submit', cancel: 'Default' });
 
     }, 10);
 }
@@ -89,7 +89,7 @@ function speedf(callback1) {
                 speed = 0.01
                 callback1()
             }
-        ).set('closable', false).set({ 'closableByDimmer': false }).set('labels', {ok:'Submit', cancel:'Default'});
+        ).set('closable', false).set({ 'closableByDimmer': false }).set('labels', { ok: 'Submit', cancel: 'Default' });
 
     }, 10);
 }
@@ -104,15 +104,15 @@ function spacef() {
                 runD()
             },
             function() {
-                space = 2 
+                space = 2
                 runD()
             }
-        ).set('closable', false).set({ 'closableByDimmer': false }).set('labels', {ok:'Submit', cancel:'Default'});
+        ).set('closable', false).set({ 'closableByDimmer': false }).set('labels', { ok: 'Submit', cancel: 'Default' });
 
     }, 10);
 }
 
-function runD(){
+function runD() {
     hueInc = 360 / bound * space
     bwInc = 255 / bound * space
     loop()
@@ -162,5 +162,8 @@ function draw() {
         fill(0, 0, 0, 0)
         rect(-x / 2, -x / 2, x, x)
         x += space
+    } else {
+        noLoop()
+        options()
     }
 }

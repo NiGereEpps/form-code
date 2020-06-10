@@ -1,12 +1,33 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
+html,
+body {
+    margin: 0;
+    padding: 0;
 }
 
 canvas {
-  display: block;
+    display: block;
+}
+
+#photos {
+    column-count: 2;
+    column-rule: 2px solid #eee;
+    column-gap: 30px;
+}
+
+#photos img {
+    width: 100% !important;
+    height: auto !important;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+}
+
+@media (max-width: 800px) {
+    #photos {
+        column-count: 1;
+    }
 }

@@ -7,29 +7,35 @@
     <link rel="stylesheet" href="css/alertify.css">
     <link rel="stylesheet" href="css/semantic.css">
     <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="icon" type="image/png" href="images/art.png">
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
     <!-- TODO: Add SDKs for Firebase products that you want to use
         https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-storage.js"></script>
-    <title>NE Algo Comp</title>
-    <meta name="description" content="Making art using Algorithms and User-input">
+    <title>Algo Comp Gallery</title>
+    <meta name="description" content="Gallery of art made using Algorithms and User-input">
     <meta name="author" content="Ni'Gere Epps">
-    <meta name="og:title" content="NE Algo Comp">
-    <meta name="og:description" content="Form + Code: Algorithmic Composition Art">
+    <meta name="og:title" content="Algo Comp Gallery">
+    <meta name="og:description" content="Form + Code: Algorithmic Composition Art Gallery">
     <meta name="og:image" content="images/art.png">
-    <meta name="og:site_name" content="NE Algo Comp">
-    <meta name="og:url" content="https://nigereepps.github.io/form-code/">
+    <meta name="og:site_name" content="Algo Comp Gallery">
+    <meta name="og:url" content="https://nigereepps.github.io/form-code/gallery.html">
 </head>
 
 <body>
-    <script type="text/javascript"> sessionStorage.clear(); </script>
+    <div class="positive ui three top attached buttons">
+        <div class="ui button" onclick="view()">View Your Piece</div>
+        <div class="ui button" id="not">Welcome to the Gallery!</div>
+        <div class="ui button" onclick="newArt()">Create New Piece</div>
+    </div>
+    <section id="photos"> </section>
+    <div id="myModal" class="modal">
+        <div class="close">&times;</div>
+        <img class="modal-content">
+    </div>
     <script src="js/gallery.js"></script>
-    <script src="js/alertify.js"></script>
-    <script src="js/p5.js"></script>
-    <script src="js/AlgorithmicComposition.js"></script>
-    <button class="ui positive button" id="option" onclick="options()">New / Gallery</button>
 </body>
 
 </html>
