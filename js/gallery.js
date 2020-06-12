@@ -11,11 +11,11 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 function saveImage() {
+    document.querySelector('.loader').style.visibility = 'visible'
     var b64 = canvas.toDataURL()
     var d = new Date();
     var str = d.toUTCString();
     sessionStorage.setItem('str', str);
-
     var storage = firebase.storage().ref(str);
     storage.putString(b64, 'data_url').then(function(snapshot) {
         console.log('Uploaded to server!');
