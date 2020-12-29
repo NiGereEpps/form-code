@@ -6,6 +6,8 @@ In this assignment I experimented with algorithmic composition using the web's [
 
 My design was based on a small project I did a few years ago in which I made [Code Spirals](https://www.instructables.com/id/Easy-Designs-Turtle-Graphics-Python/) in Python using the [Turtle Graphics](https://docs.python.org/3.3/library/turtle.html?highlight=turtle) library. In doing so, I give the user multiples options (or modes) to choose from which are prompted upon loading the page. These modes include spiral effect (with a color gradient, random colors, or black & white version) and pyramid/tunnel effect (with similar versions). Additionally, there is a "mousemode" in which the user can control where the compositions are created with their mouse. Lastly, the user can change the rotation speed (for the spiral effect) and the spacing between squares/lines which are used to create each algorithm (speed of program). 
 
+This project now includes a gallery of all compositions made by other users.
+
 This website can be accessed at https://nigereepps.github.io/form-code/
 
 ![Algorithmic Composition Art](images/art2.png)
